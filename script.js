@@ -12,6 +12,7 @@ let yodaSend = document.querySelector(".yoda-send-button");
 let darthInput = document.querySelector(".darth-input");
 let yodaInput = document.querySelector(".yoda-input");
 let chatWindow = document.querySelector(".chat-window");
+let clearAll = document.querySelector(".clear");
 
 // task 6: create an onclick event for the darth button
 darthSend.onclick = function() {
@@ -43,4 +44,8 @@ yodaSend.onclick = function() {
   // task 13: add(append) the message to the chat window. Use the position beforeend. Don't forget to close off your click event!
     chatWindow.insertAdjacentHTML('beforeend', yodaPrint);
 
+}
+
+clearAll.onclick = function() {
+  chatWindow.innerHTML = "";
 }
